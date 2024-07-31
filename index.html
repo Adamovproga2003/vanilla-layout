@@ -10,7 +10,13 @@
     <title>Кураж Тур</title>
     <meta name="description" content="Туры Страны Услуги" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/main.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -19,7 +25,559 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <div class="banner-container container-fluid">
+      <header class="header">
+        <div class="container flex justifyBetween alignCenter header_wrapper">
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </a>
+          <div class="header_actions">
+            <div class="header_links flex justifyEnd alignCenter">
+              <div class="flex header_links_location height-full">
+                <img
+                  src="./assets/images/location-icon.png"
+                  alt="location-icon"
+                />
+                <a href="#">г. Харьков, ул. Мироносицкая 10а</a>
+              </div>
+              <div class="flex height-full header_links_phone">
+                <img src="./assets/images/phone-icon.png" alt="phone-icon" />
+                <a href="tel:+38 (099) 990-81-00"
+                  >+38 (099) 990-81-00 (viber, telegram)</a
+                >
+              </div>
+              <div class="flex header_links_socials">
+                <a href="#"
+                  ><img src="./assets/images/facebook-icon.png" alt="facebook"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/images/instagram-icon.png"
+                    alt="instagram"
+                /></a>
+              </div>
+            </div>
+            <nav>
+              <ul class="flex justifyBetween alignCenter header_list">
+                <li><a href="#">Главная</a></li>
+                <li class="relative" id="tours">
+                  <a href="#">
+                    <span>Туры</span>
+                    <img src="./assets/images/arror-down.png" alt="" />
+                  </a>
+                  <div class="header_dropdown header_dropdown_tours">
+                    <ul>
+                      <li><a href="#">Горячие туры</a></li>
+                      <li><a href="#">Поиск тура</a></li>
+                      <li><a href="#">Туры по Украине</a></li>
+                      <li><a href="#">Экскурсионные туры</a></li>
+                      <li><a href="#">Week end туры</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Страны</a></li>
+                <li class="relative" id="services">
+                  <a href="#">
+                    <span>Услуги</span>
+                    <img src="./assets/images/arror-down.png" alt="" />
+                  </a>
+                  <div class="header_dropdown header_dropdown_services">
+                    <ul>
+                      <li><a href="#">Авиабилеты </a></li>
+                      <li><a href="#">Визовая поддержка</a></li>
+                      <li><a href="#">Индивидуальный трансфер</a></li>
+                      <li><a href="#">Подарочные сертификаты</a></li>
+                      <li>
+                        <a href="#">Бронирование отелей и апартаментов</a>
+                      </li>
+                      <li><a href="#">Как забронировать и оплатить тур</a></li>
+                    </ul>
+                  </div>
+                </li>
 
-    <script src="" async defer></script>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_menu">
+            <button class="header_menu_button" id="menu-button">
+              <img
+                src="./assets/images/hamburger.png"
+                alt="menu"
+                id="menu-img"
+              />
+              <img
+                src="./assets/images/close.png"
+                alt="close"
+                id="close-img"
+                style="display: none"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="offer-section">
+        <div class="container">
+          <div class="offer-section_wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p>Лучшие предложения по солнечному Египту из Харькова</p>
+                  <button type="button">Получить предложение</button>
+                </div>
+                <div class="swiper-slide">
+                  <p>Лучшие предложения по солнечному Египту из Харькова</p>
+                  <button type="button">Получить предложение</button>
+                </div>
+                <div class="swiper-slide">
+                  <p>Лучшие предложения по солнечному Египту из Харькова</p>
+                  <button type="button">Получить предложение</button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="mobileMenu" id="slide-menu">
+      <div class="container">
+        <a href="/">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </a>
+        <div class="mobileMenu_actions">
+          <nav>
+            <ul class="flex justifyBetween alignCenter mobileMenu_list">
+              <li><a href="#">Главная</a></li>
+              <li class="relative">
+                <a href="#" id="tours-link">
+                  <span>Туры</span>
+                  <img src="./assets/images/arror-down.png" alt="" />
+                </a>
+                <div class="mobileMenu_dropdown mobileMenu_dropdown_tours">
+                  <ul>
+                    <li><a href="#">Горячие туры</a></li>
+                    <li><a href="#">Поиск тура</a></li>
+                    <li><a href="#">Туры по Украине</a></li>
+                    <li><a href="#">Экскурсионные туры</a></li>
+                    <li><a href="#">Week end туры</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Страны</a></li>
+              <li class="relative">
+                <a href="#" id="services-link">
+                  <span>Услуги</span>
+                  <img src="./assets/images/arror-down.png" alt="" />
+                </a>
+                <div class="mobileMenu_dropdown mobileMenu_dropdown_services">
+                  <ul>
+                    <li><a href="#">Авиабилеты </a></li>
+                    <li><a href="#">Визовая поддержка</a></li>
+                    <li><a href="#">Индивидуальный трансфер</a></li>
+                    <li><a href="#">Подарочные сертификаты</a></li>
+                    <li>
+                      <a href="#">Бронирование отелей и апартаментов</a>
+                    </li>
+                    <li><a href="#">Как забронировать и оплатить тур</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="mobileMenu_links flex justifyEnd">
+            <div class="flex mobileMenu_links_location height-full">
+              <img
+                src="./assets/images/location-icon.png"
+                alt="location-icon"
+              />
+              <a href="#">г. Харьков, ул. Мироносицкая 10а</a>
+            </div>
+            <div class="flex height-full mobileMenu_links_phone">
+              <img src="./assets/images/phone-icon.png" alt="phone-icon" />
+              <a href="tel:+38 (099) 990-81-00"
+                >+38 (099) 990-81-00 (viber, telegram)</a
+              >
+            </div>
+            <div class="flex mobileMenu_links_socials">
+              <a href="#"
+                ><img src="./assets/images/facebook-icon.png" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/instagram-icon.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="tours-section container-fluid">
+      <div class="container tours-section_types">
+        <button
+          type="button"
+          class="tours-section_types--actived"
+          id="hot-toures"
+        >
+          Горячие туры
+        </button>
+        <button type="button" id="popular-toures">Популярные туры</button>
+      </div>
+      <div class="tours-wrapper">
+        <div class="swiper-tours hot-tours">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-1.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-2.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-2.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-1.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-1.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-tours popular-tours"
+          style="visibility: hidden; height: 0"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-2.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-1.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-2.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-1.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/images/hot-tour-1.png" alt="hot tour 1" />
+              </div>
+              <div class="swiper-tours_details">
+                <div class="swiper-tours_details_date">
+                  <p>8 марта в Cyrene Sharm hotel</p>
+                  <span>(12.03.2018 — 19.03.2018)</span>
+                </div>
+                <div class="swiper-tours_details_description">
+                  <p>Перелёт, питание по системе all inclusive, трансфер</p>
+                </div>
+                <div class="swiper-tours_details_cost">
+                  <p>1 259 грн <span>/за 1 человека</span></p>
+                </div>
+              </div>
+              <button type="button" class="swiper-tours_book">
+                <img
+                  src="./assets/images/arror-down.png"
+                  alt=""
+                  style="transform: rotate(-90deg)"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="advantages-section">
+      <div class="container advantages-section_wrapper">
+        <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
+        <div>
+          <img src="./assets/images/advantage.png" alt="Advantages" />
+          <p>
+            Очень долго подбирали разные варианты для того, чтобы отпраздновать
+            свой юбилейный День рождения в путешествии и не могли
+            определиться... Решили обратиться за помощью в турагенство.
+            Гульнара, выслушав все пожелания, предложила отдых в Турции, отель
+            Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень
+            благодарны ей за предложенный вариант!!!! Отдых получился отличный!
+            Отель с большой ухоженной территорией, внимательный обслуживающий
+            персонал. Отличный номер с видом на море.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="form-section">
+      <div class="container">
+        <h2>ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h2>
+        <form>
+          <input type="text" placeholder="Имя" />
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Телефон" />
+          <select>
+            <option disabled selected>Страна тура</option>
+            <option value="1">Турция</option>
+            <option value="2">Египет</option>
+            <option value="3">Шри-Ланка</option>
+            <option value="4">Доминикана</option>
+          </select>
+          <button type="submit">Получить предложение</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container flex justifyBetween footer_wrapper">
+        <div class="footer_info">
+          <img src="./assets/images/footer-logo.png" alt="Footer logo" />
+          <p>
+            Кураж тур агенство,которое предоставляет услуги по поиску,
+            оформлению и подбору туров для вас и ваших родных.
+          </p>
+          <div>
+            Создание сайта —
+            <img src="./assets/images/logo-creator.png" alt="" />
+          </div>
+        </div>
+        <div class="footer_nav">
+          <nav>
+            <h2>Навигация</h2>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Туры</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Услуги</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer_support">
+          <h2>Поддержка</h2>
+          <ul>
+            <li><a href="#">FAQ </a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div class="footer_contacts">
+          <h2>Контакты</h2>
+          <ul>
+            <li>
+              <img
+                src="./assets/images/location-icon.png"
+                alt="location-icon"
+              />
+              <a href="#">г. Харьков, ул. Мироносицкая 10а</a>
+            </li>
+            <li>
+              <img src="./assets/images/phone-icon.png" alt="phone-icon" />
+              <a href="tel:+38 (099) 990-81-00">+38 (099) 990-81-00</a>
+            </li>
+          </ul>
+          <div class="footer_contacts_socials">
+            <a href="#"
+              ><img src="./assets/images/facebook-icon.png" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/instagram-icon.png" alt="instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/swiper.js" async defer></script>
   </body>
 </html>
