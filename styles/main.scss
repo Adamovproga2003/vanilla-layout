@@ -679,4 +679,12 @@ button {
   .tours-wrapper {
     margin-inline: 20px;
   }
+
+  .advantages-section {
+    padding-inline: 0px;
+    padding-block: 30px;
+    &_wrapper h1 {
+      margin-bottom: 30px !important;
+    }
+  }
 }
